@@ -1,7 +1,7 @@
 .banner-sandwich{
-    background: url('../img/background-sandwichs3.jpg') no-repeat center center;
+    background: url('../img/sandwich.jpg') no-repeat center center;
     background-size: cover;
-    height: calc(100vh - 112px);
+    height: calc(100vh - 155px);
     opacity: 0.85;
 }
 
@@ -11,6 +11,7 @@
 }
 
 .conteudo > div{
+    cursor: pointer;
     transition: all .5s ease-in-out;
 }
 
