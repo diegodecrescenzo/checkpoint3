@@ -136,7 +136,7 @@
             <div class="row g-3">
               <div class="col-sm-6">
                 <label for="firstName" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <input type="text" class="form-control" id="nome" placeholder="" value="" required>
                 <div class="invalid-feedback">
                   Valid first name is required.
                 </div>
@@ -144,7 +144,7 @@
 
               <div class="col-sm-6">
                 <label for="lastName" class="form-label">Sobrenome</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required>
                 <div class="invalid-feedback">
                   Valid last name is required.
                 </div>
@@ -215,8 +215,8 @@
             <hr class="my-4">
 
             <div class="col-sm-12">
-              <label for="floatingTextarea2" class="form-label">Descreva seu Pedido Aqui</label>
-              <textarea class="form-control" placeholder="" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="pedido" class="form-label">Descreva seu Pedido Aqui</label>
+              <textarea class="form-control" placeholder="" id="pedido" style="height: 100px"></textarea>
             </div>
 
             <hr class="my-4">
@@ -229,12 +229,15 @@
                 <button class="w-100 btn btn-secondary btn-lg mt-2" type="reset">Cancelar</button>
               </div>
             </div>
+
+            <div id="alert" class="d-flex justify-content-center align-items-center"></div>
+
           </form>
         </div>
       </div>
     </div>
 
-    <div id="alert"></div>
+    
     
   </main>
 

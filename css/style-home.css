@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
 
-.banner{
-    background: url('../img/banner2.jpg') no-repeat center center;
-    background-size: cover;
-    height: calc(100vh - 155px);
-    
+
+
+#myCarousel img{
+	height: calc(100vh - 155px);
+	width: 100%;
+	
 }
+
 
 .caixa1, .caixa2, .caixa3, 
 .caixa4, .caixa5, .caixa6,

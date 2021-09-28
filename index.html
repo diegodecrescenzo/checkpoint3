@@ -14,6 +14,18 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-home.css">
+
+    <style>
+        /* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+  background-color: #000;
+}
+
+
+
+
+    </style>
 </head>
 
 <body>
@@ -21,38 +33,78 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Eighth navbar example">
             <div class="container">
-              <a class="navbar-brand" href="">
-                  <img src="img/logo.png" alt="Logotipo Site">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-        
-              <div class="collapse navbar-collapse justify-content-end" id="menu">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active disabled" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="views/sobre.html">Sobre</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="views/contato.html">Contato</a>
-                  </li>
-                  
-              </div>
+                <a class="navbar-brand" href="">
+                    <img src="img/logo.png" alt="Logotipo Site">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active disabled" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="views/sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="views/contato.html">Contato</a>
+                        </li>
+
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
 
     <main>
 
-        <div class="banner"></div>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="container">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+    
+                <div class="carousel-inner">
+    
+                    <div class="carousel-item active">
+    
+                        <img src="img/carrosel1.jpg" alt="">
+    
+                    </div>
+    
+                    <div class="carousel-item">
+                        <img src="img/carrosel2.jpg" alt="">
+                    </div>
+    
+                    <div class="carousel-item">
+                        <img src="img/carrosel3.jpg" alt="">
+                    </div>
+    
+                </div>
+    
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
+
 
         <div class="conteudo text-center py-4">
             <div class="col-6 mx-auto">
                 <h2 class="display-3">Hamburguers</h2>
-                <p class="lead my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, eaque? Labore quisquam
+                <p class="lead my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, eaque? Labore
+                    quisquam
                     aliquid debitis dolorem nulla quod esse exercitationem similique aperiam, asperiores quia? Deleniti
                     animi exercitationem corporis. Maiores, nisi qui?</p>
                 <a href="views/hambúrguer.html" class="btn btn-lg btn-danger ">Ver Menu</a>
@@ -63,7 +115,9 @@
         <div class="conteudo text-center py-4">
             <div class="col-6 mx-auto">
                 <h2 class="display-3">Panini</h2>
-                <p class="lead my-4">Quem disse que sandwichs não são saudáveis?!?! Sabendo acertar os ingredientes, nós conseguimos fazer um sandwich saboroso, benéfico para a nossa saúde e que vale por uma refeição principal. Confira!!!</p>
+                <p class="lead my-4">Quem disse que sandwichs não são saudáveis?!?! Sabendo acertar os ingredientes, nós
+                    conseguimos fazer um sandwich saboroso, benéfico para a nossa saúde e que vale por uma refeição
+                    principal. Confira!!!</p>
                 <a href="views/panini.html" class="btn btn-lg btn-danger ">Ver Menu</a>
             </div>
         </div>
@@ -72,7 +126,9 @@
         <div class="conteudo text-center py-4">
             <div class="col-6 mx-auto">
                 <h2 class="display-3">Pizzas</h2>
-                <p class="lead my-4">Tá cansado, com fome e não quer cozinhar? Fala com a gente que em alguns minutinhos você vai receber uma das maiores maravilhas gastronômicas da cidade: A nossa pizza! Já coloca o pijama, relaxa e pede logo!</p>
+                <p class="lead my-4">Tá cansado, com fome e não quer cozinhar? Fala com a gente que em alguns minutinhos
+                    você vai receber uma das maiores maravilhas gastronômicas da cidade: A nossa pizza! Já coloca o
+                    pijama, relaxa e pede logo!</p>
                 <a href="/views/pizzas.html" class="btn btn-lg btn-danger ">Ver Menu</a>
             </div>
         </div>
@@ -81,7 +137,9 @@
         <div class="conteudo text-center py-4">
             <div class="col-6 mx-auto">
                 <h2 class="display-3">Carnes</h2>
-                <p class="lead my-4">Esta a procura dos melhores pratos? Não precisa mais procurar aqui com certeza você vai encontrar o melhor prato  de toda a região. No conforto da sua casa ou em um de nossos restaurantes sempre fazendo o melhor para o cliente</p>
+                <p class="lead my-4">Esta a procura dos melhores pratos? Não precisa mais procurar aqui com certeza você
+                    vai encontrar o melhor prato de toda a região. No conforto da sua casa ou em um de nossos
+                    restaurantes sempre fazendo o melhor para o cliente</p>
                 <a href="./views/carnes.html" class="btn btn-lg btn-danger ">Ver Menu</a>
             </div>
         </div>
@@ -90,7 +148,8 @@
         <div class="conteudo text-center py-4">
             <div class="col-6 mx-auto">
                 <h2 class="display-3">Saladas</h2>
-                <p class="lead my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, eaque? Labore quisquam
+                <p class="lead my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, eaque? Labore
+                    quisquam
                     aliquid debitis dolorem nulla quod esse exercitationem similique aperiam, asperiores quia? Deleniti
                     animi exercitationem corporis. Maiores, nisi qui?</p>
                 <a href="./views/saladas.html" class="btn btn-lg btn-danger ">Ver Menu</a>
@@ -101,7 +160,8 @@
         <div class="conteudo text-center py-4">
             <div class="col-6 mx-auto">
                 <h2 class="display-3">Doces</h2>
-                <p class="lead my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, eaque? Labore quisquam
+                <p class="lead my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, eaque? Labore
+                    quisquam
                     aliquid debitis dolorem nulla quod esse exercitationem similique aperiam, asperiores quia? Deleniti
                     animi exercitationem corporis. Maiores, nisi qui?</p>
                 <a href="views/doces.html" class="btn btn-lg btn-danger ">Ver Menu</a>
@@ -112,7 +172,8 @@
         <div class="conteudo text-center py-4">
             <div class="col-6 mx-auto">
                 <h2 class="display-3">Bebidas</h2>
-                <p class="lead my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, eaque? Labore quisquam
+                <p class="lead my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, eaque? Labore
+                    quisquam
                     aliquid debitis dolorem nulla quod esse exercitationem similique aperiam, asperiores quia? Deleniti
                     animi exercitationem corporis. Maiores, nisi qui?</p>
                 <a href="bebidas.html" class="btn btn-lg btn-danger ">Ver Menu</a>
