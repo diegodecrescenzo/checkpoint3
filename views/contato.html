@@ -13,36 +13,105 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/style-contato.css">
 
+  <style>
+    .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: #231C80CC; /* Black w/ opacity */
+
+}
+
+/* Modal Content  */
+/* Add Animation - Zoom in the Modal */
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border: none;
+    border-radius: 10px;
+}
+
+.modal_form{
+    position: relative;
+    flex-basis: 50%;
+    padding: 40px 20px;
+    margin: auto 0;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 2.8em;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+  </style>
+
 
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Eighth navbar example">
-        <div class="container  d-flex align-items-center">
-          <a class="navbar-brand" href="">
-              <img src="../img/logo.png" alt="Logotipo Site">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="collapse navbar-collapse justify-content-end" id="menu">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sobre.html">Sobre</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active disabled" href="contato.html">Contato</a>
-              </li>
-              
-          </div>
+      <div class="container  d-flex align-items-center">
+        <a class="navbar-brand" href="">
+          <img src="../img/logo.png" alt="Logotipo Site">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active disabled" href="contato.html">Contato</a>
+            </li>
+
         </div>
-      </nav>
-</header>
+      </div>
+    </nav>
+  </header>
 
   <main>
     <div class="container">
@@ -122,7 +191,7 @@
               </div>
 
               <div class="col-md-4 col-sm-12"">
-                <label for="country" class="form-label">Cidade</label>
+                <label for=" country" class="form-label">Cidade</label>
                 <input type="text" class="form-control" id="cidade" placeholder="cidade" disabled>
                 <div class="invalid-feedback">
                   Please select a valid country.
@@ -130,7 +199,7 @@
               </div>
 
               <div class="col-md-4 col-sm-12"">
-                <label for="state" class="form-label">Estado</label>
+                <label for=" state" class="form-label">Estado</label>
                 <input type="text" class="form-control" id="estado" placeholder="Estado" disabled>
                 <div class="invalid-feedback">
                   Please provide a valid state.
@@ -145,19 +214,28 @@
 
             <hr class="my-4">
 
+            <div class="col-sm-12">
+              <label for="floatingTextarea2" class="form-label">Descreva seu Pedido Aqui</label>
+              <textarea class="form-control" placeholder="" id="floatingTextarea2" style="height: 100px"></textarea>
+            </div>
+
+            <hr class="my-4">
+
             <div class="row">
               <div class="col-6">
-                <button class="w-100 btn btn-lg mt-2" type="submit">Enviar</button>
+                <button class="w-100 btn btn-lg mt-2" type="submit" data-submit>Enviar</button>
               </div>
               <div class="col-6">
                 <button class="w-100 btn btn-secondary btn-lg mt-2" type="reset">Cancelar</button>
               </div>
             </div>
-
           </form>
         </div>
       </div>
     </div>
+
+    <div id="alert"></div>
+    
   </main>
 
   <footer>

@@ -29,5 +29,18 @@ const preencherCampos = (data) =>{
 }
 
 const inputcep = document.querySelector('#cep');
-
 inputcep.addEventListener('blur', pesquisaCep);
+
+
+
+const btnSubmit = document.querySelector('[data-submit]');
+btnSubmit.addEventListener('click', (e) =>{
+    e.preventDefault();
+
+    const template = `<h3 class="bg-success text-white">Seu Pedido foi realizado com sucesso</h3>`
+
+    const alert = document.querySelector('#id');
+    alert.appendChild(template)
+   
+} );  
+
