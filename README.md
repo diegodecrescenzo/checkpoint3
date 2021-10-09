@@ -1,11 +1,14 @@
 ## CheckPoint3 - CTD Digital House
 
+#### Stacks Utilizadas no Projeto
 <div style="display: inline_block"><br>
   <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
   <img align="center" alt="Bootstrap" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg">
   <img align="center" alt="JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
 </div>
+
+##
 
 O projeto CheckPoint 3 foi criado para consolidar os conhecimentos e aplicar todos os conceitos aprendidos nas aulas de Front-End I, do Professor Renan,
 do curso de Certified Tech Developer da Digital House. Durante o curso aprendedos conceitos básicos e intermediários de HTML5 e CSS3, chegando ao fim com
