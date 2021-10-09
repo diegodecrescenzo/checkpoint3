@@ -7,17 +7,18 @@
 header{
     background: lightcoral;
     color: #FFF;
-    padding: 20px 10px;
+    padding: 10px;
 }
 
 .navbar-brand img{
-    width: 250px;
+    width: 200px;
+    filter: drop-shadow(3px 3px 3px #333333);
 }
 
 #menu li a{
     border-radius: 10px;
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding: 10px 15px;
     margin: 5px;
     transition: all .5s ease-in-out;
@@ -36,9 +37,9 @@ footer{
     background: lightcoral;
     color: #FFF;
     display: flex;
-    font-size: 1.2rem;
+    font-size: .9rem;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 

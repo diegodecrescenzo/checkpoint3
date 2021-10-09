@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
 
 
+form{
+    font-size: .9rem;
+}
 
 .form-imagem{
-    width: 350px;
+    width: 250px;
     border-radius: 50%;
 }
 
@@ -13,7 +16,6 @@ h2 {
 }
 
 .bd-placeholder-img {
-    font-size: 1.125rem;
     text-anchor: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
